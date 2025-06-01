@@ -1,0 +1,10 @@
+
+body{
+    background-image: var(--bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--color);
+    font-family: robot,sans-serif;
+}
+
