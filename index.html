@@ -12,6 +12,42 @@
         <link rel="stylesheet" href="css-files/popular-shows.css">
         <link rel="stylesheet" href="css-files/reviews.css">
         <link rel="stylesheet" href="css-files/footer.css">
+         <style>
+      /* Responsive tweaks */
+      @media (max-width: 768px) {
+        
+        
+        .hero-content {
+          flex-direction: column;
+          text-align: center;
+        }
+        .hero-image img {
+          width: 90%;
+          margin-top: 20px;
+        }
+        .movie-grid,
+        .show-grid,
+        .reviews-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .movie-card,
+        .show-card,
+        .review-form,
+        .review-cards {
+          width: 90%;
+        }
+        .footer-container {
+          flex-direction: column;
+          gap: 20px;
+        }
+        .footer-links a,
+        .back-to-top a {
+          display: block;
+          margin: 5px 0;
+        }
+      }
+    </style>
     </head>
     <body>
         <nav class="nav">
@@ -42,7 +78,7 @@
 
                 <!-- Right Side -->
                 <div class="hero-image">
-                <img src="media/movie-night.svg" alt="Movie Time" class="animated-svg" />
+                <img src="media/movie-night.png" alt="Movie Time" class="animated-svg" />
                 </div>
             </div>
         </section>
