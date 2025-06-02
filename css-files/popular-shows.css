@@ -1,0 +1,128 @@
+  .popular {
+  
+  padding: 60px 20px;
+  background: var(--bg-color);
+  text-align: center;
+}
+
+.show-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.show-card {
+  flex: 1;
+  background: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.show-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.show-info {
+  padding: 15px;
+}
+
+.show-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.show-info .genre {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.synopsis {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 8px 0;
+}
+
+.learn-more {
+  display: inline-block;
+  background: #6366f1;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.learn-more:hover {
+  background: #4f46e5;
+}
+
+/* MODAL STYLES */
+.modal-toggle {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-toggle:checked + .modal {
+  display: flex;
+}
+
+.modal-content {
+  background:var(--bg-color);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: left;
+  position: relative;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.watch-now-show {
+  display: inline-block;
+  margin-top: 10px;
+  background: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
