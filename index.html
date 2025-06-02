@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="css-files/dark_toggle.css">
         <link rel="stylesheet" href="css-files/hero.css">
         <link rel="stylesheet" href="css-files/trending.css">
+        <link rel="stylesheet" href="css-files/popular-shows.css">
+        <link rel="stylesheet" href="css-files/reviews.css">
+        <link rel="stylesheet" href="css-files/footer.css">
     </head>
     <body>
         <nav class="nav">
@@ -17,9 +20,9 @@
             </div>
             <div class="webpage-navigation">
                 <a href="#trending"><h3>|Trending Movies|</h3></a>
-                <h3>|Popular Shows|</h3>
-                <h3>|Reviews|</h3>
-                <h3>|End|</h3>
+                <a href="#popular"><h3>|Popular Shows|</h3></a>
+                <a href="#reviews"><h3>|Reviews|</h3></a>
+                <a href="#footer"><h3>|End|</h3></a>
             </div>
             <div class="dark-mode">
                 <label class="switch">
@@ -104,7 +107,170 @@
     
                 </div>
             </section>
-        
+        <section class="popular" id="popular">
+        <h2 class="section-title">Popular Shows</h2>
+        <p class="section-subtitle">Explore the top-rated series everyone is talking about</p>
+
+        <div class="show-grid">
+            <div class="show-card">
+            <img src="media/vikings.jpg" alt="vikings">
+            <div class="show-info">
+                <h3>Vikings</h3>
+                <p class="genre">Historical Drama, Action, Adventure</p>
+                <p>6 Seasons | 89 Episodes</p>
+                <p class="synopsis">A legendary Norse hero, Ragnar Lothbrok, rises from farmer to king through epic raids and battles in the Viking age.</p>
+                <label for="modal1" class="learn-more">Learn More</label>
+            </div>
+            </div>
+
+            <!-- MODAL 1 -->
+            <input type="checkbox" id="modal1" class="modal-toggle" />
+            <div class="modal">
+            <div class="modal-content">
+                <label for="modal1" class="close-btn">&times;</label>
+                <h3>Vikings</h3>
+                <p><strong>Genre:</strong> Historical Drama, Action, Adventure</p>
+                <p><strong>Seasons:</strong> 6</p>
+                <p><strong>Episodes:</strong> 89</p>
+                <p><strong>Description:</strong> Vikings is a gritty historical drama that explores the brutal world of Norse warriors 
+                    and explorers. Centered around Ragnar Lothbrok, it dives into the Viking way of life — raiding, loyalty, family, and the clash between paganism and Christianity..</p>
+                <a href="https://www.netflix.com/in/title/70301870" target="_blank" class="watch-now-show">Watch Now</a>
+            </div>
+            </div>
+            
+            <div class="show-card">
+            <img src="media/peaky blinders.jpg" alt="peaky blinders">
+            <div class="show-info">
+                <h3>Peaky Blinders</h3>
+                <p class="genre">Crime, Drama, Historical</p>
+                <p>6 Seasons | 36 Episodes</p>
+                <p class="synopsis">In post-WWI England, the Shelby family builds a crime empire led by the ambitious Tommy Shelby.</p>
+                <label for="modal2" class="learn-more">Learn More</label>
+            </div>
+            </div>
+            
+
+            <!-- MODAL 2 -->
+            <input type="checkbox" id="modal2" class="modal-toggle" />
+            <div class="modal">
+            <div class="modal-content">
+                <label for="modal2" class="close-btn">&times;</label>
+                <h3>Peaky Blinders</h3>
+                <p><strong>Genre:</strong> Crime, Drama, Historical</p>
+                <p><strong>Seasons:</strong> 6</p>
+                <p><strong>Episodes:</strong> 36</p>
+                <p><strong>Description:</strong> Peaky Blinders is a stylish British crime drama set in 1920s Birmingham. It follows the rise of the Shelby family gang,
+                    led by the cold and calculating Tommy Shelby, as they navigate power, politics, and violence in post-war England.</p>
+                <a href="https://www.netflix.com/in/title/80002479" target="_blank" class="watch-now-show">Watch Now</a>
+            </div>
+            </div>
+            
+            <div class="show-card">
+            <img src="media/breaking bad.jpg" alt="Breaking Bad">
+            <div class="show-info">
+                <h3>Breaking Bad</h3>
+                <p class="genre">Crime, Drama</p>
+                <p>5 Seasons | 62 Episodes</p>
+                <p class="synopsis">A chemistry teacher turns to making meth to secure his family's future.</p>
+                <label for="modal3" class="learn-more">Learn More</label>
+            </div>
+            </div>
+
+            <!-- MODAL 3 -->
+            <input type="checkbox" id="modal3" class="modal-toggle" />
+            <div class="modal">
+            <div class="modal-content">
+                <label for="modal3" class="close-btn">&times;</label>
+                <h3>Breaking Bad</h3>
+                <p><strong>Genre:</strong> Crime, Thriller, Drama</p>
+                <p><strong>Seasons:</strong> 5</p>
+                <p><strong>Episodes:</strong> 62</p>
+                <p><strong>Description:</strong> Walter White, a high school chemistry teacher, partners with a former student to produce meth and battle crime lords in this iconic series.</p>
+                <a href="https://www.netflix.com/title/70143836" target="_blank" class="watch-now-show">Watch Now</a>
+            </div>
+            </div>
+            
+            <div class="show-card">
+            <img src="media/sakomoto days.jpg" alt="sakamoto days">
+            <div class="show-info">
+                <h3>Sakamoto Days</h3>
+                <p class="genre"> Action, Comedy, Slice of Life</p>
+                <p>1 Season | 22 Episodes</p>
+                <p class="synopsis">A former assassin turned convenience store owner must protect his peaceful life using his deadly skills — all while being a family man.</p>
+                <label for="modal4" class="learn-more">Learn More</label>
+            </div>
+            </div>
+
+            <!-- MODAL 4 -->
+            <input type="checkbox" id="modal4" class="modal-toggle" />
+            <div class="modal">
+            <div class="modal-content">
+                <label for="modal4" class="close-btn">&times;</label>
+                <h3>Sakamoto Days</h3>
+                <p><strong>Genre:</strong> Action, Comedy, Slice of Life</p>
+                <p><strong>Seasons:</strong> 1</p>
+                <p><strong>Episodes:</strong>22 </p>
+                <p><strong>Description:</strong>Sakamoto Days is a fast-paced action comedy manga (with an anime adaptation in development).
+                    It follows Taro Sakamoto, once the deadliest hitman, who’s now a kind, overweight shopkeeper trying to live a peaceful life — but his past won’t leave him alone.</p>
+                <a href="https://hianimez.to/sakamoto-days-19431" target="_blank" class="watch-now-show">Watch Now</a>
+            </div>
+            </div>
+        </div>
+  
+  
+        </section>
+        <section class="reviews" id="reviews">
+            <h2 class="section-title">User Reviews</h2>
+            <p class="section-subtitle">See what our viewers are saying & share your thoughts!</p>
+
+            <div class="reviews-container">
+                <!-- Left: Review Cards -->
+                <div class="review-cards">
+                <div class="review-card">
+                    <img src="media/cat1.jpeg" alt="User 1">
+                    <h3>Priya Sharma</h3>
+                    <p>"Loved the intense drama of Peaky Blinders! Every episode is a rollercoaster."</p>
+                </div>
+                <div class="review-card">
+                    <img src="media/cat3.jpg" alt="User 2">
+                    <h3>Arjun Verma</h3>
+                    <p>"Vikings brought Norse mythology to life. Epic and thrilling from start to finish!"</p>
+                </div>
+                </div>
+
+                <!-- Right: Review Form -->
+                <div class="review-form">
+                <h3>Submit Your Review</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Review" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+                </div>
+            </div>
+        </section>  
+        <footer class="footer" id="footer">
+            <div class="footer-container">
+                <!-- Social Media -->
+                <div class="footer-socials">
+                <a href="https://facebook.com" target="_blank"><img src="media/facebook.svg" alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="media/twitter-x.svg" alt="Twitter"></a>
+                <a href="https://instagram.com" target="_blank"><img src="media/instagram.svg" alt="Instagram"></a>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links">
+                <a href="https://www.youtube.com/watch?v=zL7NgFZP3NM" target="_blank">Terms & Conditions</a>
+                <a href="https://www.youtube.com/watch?v=g2S3E2JxJZc" target="_blank">Privacy Policy</a>
+                </div>
+
+                <!-- Back to Top Button -->
+                <div class="back-to-top">
+                <a href="#">Back to Top ↑</a>
+                </div>
+            </div>
+        </footer>
         
     </body>
 </html>
